@@ -17,7 +17,7 @@
       <table id="dt-Users" class="table table-responsive-sm table-striped">
         <thead>
           <tr>
-            <th scope="col">@lang('Username')</th>
+            <th scope="col">@lang('имя пользователя')</th>
             <th scope="col">@lang('E-Mail')</th>
             <th scope="col">@lang('Member Since')</th>
             <th scope="col">@lang('Last Updated')</th>

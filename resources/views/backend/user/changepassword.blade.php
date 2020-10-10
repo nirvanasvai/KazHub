@@ -13,8 +13,8 @@
       <div class="card">
         <div class="card-body">
           <h4 class="card-title mb-0">
-            @lang('Account Settings')
-            <small class="text-muted">@lang('Change Password')</small>
+            @lang('Настройки аккаунта')
+            <small class="text-muted">@lang('Сменить Пароль')</small>
           </h4>
 
           <hr />
@@ -22,19 +22,19 @@
           <div class="row mt-4 mb-4">
           <div class="col">
             <div class="form-group{{ $errors->has('current-password') ? ' has-error' : '' }} row">
-              <label for="current-password" class="col-sm-3 col-form-label">@lang('Your Password')</label>
+              <label for="current-password" class="col-sm-3 col-form-label">@lang('Ваш Пароль')</label>
 
               <div class="col">
-                <input id="current-password" type="password" class="form-control" name="current-password" placeholder="Enter your password" required>
+                <input id="current-password" type="password" class="form-control" name="current-password" placeholder="Введите ваш пароль" required>
               </div>
             </div>
 
             <div class="form-group{{ $errors->has('new-password') ? ' has-error' : '' }} row">
-              <label for="new-password" class="col-sm-3 col-form-label">@lang('New Password')</label>
+              <label for="new-password" class="col-sm-3 col-form-label">@lang('Новый Пароль')</label>
 
               <div class="col">
                 <div class="input-group password-toggler-container">
-                  <input type="password" class="form-control" id="new-password" name="new-password" aria-label="Enter a new password" placeholder="Enter a new password" required>
+                  <input type="password" class="form-control" id="new-password" name="new-password" aria-label="Enter a new password" placeholder="Введите новый пароль" required>
                   <div class="input-group-append">
                     <span class="input-group-text password-toggler">
                       <i class="fa fa-eye-slash"></i>
@@ -46,11 +46,11 @@
             </div>
 
             <div class="form-group row">
-              <label for="new-password-confirm" class="col-sm-3 col-form-label">@lang('Confirmation')</label>
+              <label for="new-password-confirm" class="col-sm-3 col-form-label">@lang('Подвердите')</label>
 
               <div class="col">
                 <div class="input-group password-toggler-container">
-                  <input type="password" class="form-control" id="new-password-confirm" name="new-password_confirmation" aria-label="Retype the new password" placeholder="Retype the new password" required>
+                  <input type="password" class="form-control" id="new-password-confirm" name="new-password_confirmation" aria-label="Retype the new password" placeholder="Повторите новый пароль" required>
                   <div class="input-group-append">
                     <span class="input-group-text password-toggler">
                       <i class="fa fa-eye-slash"></i>
@@ -64,7 +64,7 @@
             <div class="row">
               <div class="col text-right">
                 <button type="submit" class="btn btn-secondary">
-                  @lang('Change Password')
+                  @lang('Сменить Пароль')
                 </button>
               </div>
             </div>

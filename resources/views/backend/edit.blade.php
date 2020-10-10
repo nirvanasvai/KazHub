@@ -1,6 +1,6 @@
 @extends('layouts.backend')
 
-@section('title', Str::title(Auth::user()->name) .' ‹ '. __('Change Password'))
+@section('title', Str::title(Auth::user()->name) .' ‹ '. __('Смена Паролья'))
 
 @section('content')
 
@@ -13,8 +13,8 @@
       <div class="card">
         <div class="card-body">
           <h4 class="card-title mb-0">
-            @lang('My URLs')
-            <small class="text-muted">@lang('Edit URL')</small>
+            @lang('Мои URLs')
+            <small class="text-muted">@lang('Редактировать URL')</small>
           </h4>
 
           <hr />
@@ -22,7 +22,7 @@
           <div class="row mt-4 mb-4">
           <div class="col">
             <div class="form-group{{ $errors->has('short-url') ? ' has-error' : '' }} row">
-              <label for="short-url" class="col-sm-3 col-form-label">@lang('Short URL')</label>
+              <label for="short-url" class="col-sm-3 col-form-label">@lang('Короткий URL')</label>
 
               <div class="col">
                 <div class="input-group mb-3">
@@ -40,17 +40,17 @@
             </div>
 
             <div class="form-group{{ $errors->has('long-url') ? ' has-error' : '' }} row">
-              <label for="long-url" class="col-sm-3 col-form-label">@lang('Long URL')</label>
+              <label for="long-url" class="col-sm-3 col-form-label">@lang('Длинный URL')</label>
 
               <div class="col">
-                <input id="long-url" type="text" class="form-control" name="long_url" placeholder="@lang('Enter your long url')" required value="{{$url->long_url}}">
+                <input id="long-url" type="text" class="form-control" name="long_url" placeholder="@lang('Введите свой длинный URL')" required value="{{$url->long_url}}">
               </div>
             </div>
 
             <div class="row">
               <div class="col text-right">
                 <button type="submit" class="btn btn-secondary">
-                  @lang('Save Changes')
+                  @lang('Сохранить изменения')
                 </button>
               </div>
             </div>

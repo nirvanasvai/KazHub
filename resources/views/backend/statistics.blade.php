@@ -1,6 +1,6 @@
 @extends('layouts.backend')
 
-@section('title', __('Statistics'))
+@section('title', __('Статистика'))
 
 @section('content')
 <div class="statistics">
@@ -8,33 +8,33 @@
 <div class="card-body">
 
 <div class="alert alert-danger" role="alert">
-  Sorry, this page is under development
+  Извините, эта страница в разработке
 </div>
-  <h3>UrlHub Statistics</h3>
+  <h3>Статистика по nurhub</h3>
 <br>
-  <b>Capacity</b>   : <span title="{{number_format($keyCapacity)}}" data-toggle="tooltip">{{numberFormatShort($keyCapacity)}}</span> <br>
-  <b>Remaining</b>  : <span title="{{number_format($keyRemaining)}}" data-toggle="tooltip">
+  <b>Вместимость</b>   : <span title="{{number_format($keyCapacity)}}" data-toggle="tooltip">{{numberFormatShort($keyCapacity)}}</span> <br>
+  <b>Осталось</b>  : <span title="{{number_format($keyRemaining)}}" data-toggle="tooltip">
                         {{numberFormatShort($keyRemaining)}}
                         ({{$remainingPercentage}})
                       </span> <br>
 
 <br>
 
-  <b>Total Short Url</b> <br>
-  Value             : <span title="{{number_format($shortUrlCount)}}" data-toggle="tooltip">{{numberFormatShort($shortUrlCount)}}</span> <br>
-  Value By Guest    : <span title="{{number_format($shortUrlCountByGuest)}}" data-toggle="tooltip">{{numberFormatShort($shortUrlCountByGuest)}}</span> <br>
+  <b>Всего короткий URL</b> <br>
+  Значение          : <span title="{{number_format($shortUrlCount)}}" data-toggle="tooltip">{{numberFormatShort($shortUrlCount)}}</span> <br>
+  Значение по гостю   : <span title="{{number_format($shortUrlCountByGuest)}}" data-toggle="tooltip">{{numberFormatShort($shortUrlCountByGuest)}}</span> <br>
 
 <br>
 
-  <b>Total Clicks</b> <br>
-  Value             : <span title="{{number_format($clickCount)}}" data-toggle="tooltip">{{numberFormatShort($clickCount)}}</span> <br>
-  Value By Guest    : <span title="{{number_format($clickCountFromGuest)}}" data-toggle="tooltip">{{numberFormatShort($clickCountFromGuest)}}</span> <br>
+  <b>Всего кликов</b> <br>
+  Значение             : <span title="{{number_format($clickCount)}}" data-toggle="tooltip">{{numberFormatShort($clickCount)}}</span> <br>
+  Значение по гостю     : <span title="{{number_format($clickCountFromGuest)}}" data-toggle="tooltip">{{numberFormatShort($clickCountFromGuest)}}</span> <br>
 
 <br>
 
-  <b>Total User</b> <br>
-  Registered User   : <span title="{{number_format($userCount)}}" data-toggle="tooltip">{{numberFormatShort($userCount)}}</span> <br>
-  Unregistered User : <span title="{{number_format($guestCount)}}" data-toggle="tooltip">{{numberFormatShort($guestCount)}}</span> <br>
+  <b>Всего пользователей</b> <br>
+  Зарегистрированный Пользователь   : <span title="{{number_format($userCount)}}" data-toggle="tooltip">{{numberFormatShort($userCount)}}</span> <br>
+  Незарегистрированный пользователь : <span title="{{number_format($guestCount)}}" data-toggle="tooltip">{{numberFormatShort($guestCount)}}</span> <br>
 
 
 </div>

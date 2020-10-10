@@ -25,24 +25,24 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <span class="dropdown-item" href="{{ route('dashboard') }}">
-                @lang('Signed in as') {{ Str::title(Auth::user()->name) }}
+                @lang('Вы вошли как') {{ Str::title(Auth::user()->name) }}
               </span>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="{{ route('dashboard') }}">
-                @lang('Dashboard')
+                @lang('Панель приборов')
               </a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="{{ route('user.edit', Auth::user()->name) }}">
-                @lang('Your Profile')
+                @lang('Ваш Профиль')
               </a>
               <a class="dropdown-item" href="{{ route('user.change-password', Auth::user()->name) }}">
-                @lang('Change Password')
+                @lang('Сменить пароль')
               </a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="{{ route('logout') }}"
                  onclick="event.preventDefault();
                  document.getElementById('logout-form').submit();">
-                {{ __('Sign out') }}
+                {{ __('Выйти') }}
               </a>
               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               @csrf
@@ -51,11 +51,11 @@
           </li>
         @else
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('login') }}">@lang('Login')</a>
+            <a class="nav-link" href="{{ route('login') }}">@lang('Войти')</a>
           </li>
           @if (Route::has('register') and Config::get('urlhub.registration'))
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('register') }}">@lang('Register')</a>
+            <a class="nav-link" href="{{ route('register') }}">@lang('Регестрация')</a>
           </li>
           @endif
         @endauth

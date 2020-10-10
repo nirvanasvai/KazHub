@@ -52,10 +52,10 @@ $(function() {
                     $("#link-availability-status").html(data.success);
                 }
             }).fail(function (jqXHR, textStatus) {
-                $("#link-availability-status").html("Hmm. We're having trouble connecting to the server.");
+                $("#link-availability-status").html("Хм. У нас проблемы с подключением к серверу.");
             });
 
-            $('#link-availability-status').html('<span><i class="fa fa-spinner"></i> Loading..</span>');
+            $('#link-availability-status').html('<span><i class="fa fa-spinner"></i>Загрузка..</span>');
         },
         wait: 500,
         captureLength: 1,

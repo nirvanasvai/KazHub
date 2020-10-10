@@ -9,7 +9,7 @@
 <div class="row justify-content-center mt-5">
 <div class="col-md-8">
   <div class="card">
-    <div class="card-header"><b>@lang('Reset Password')</b></div>
+    <div class="card-header"><b>@lang('Сброс пароля')</b></div>
 
     <div class="card-body">
       @if (session('status'))
@@ -21,12 +21,12 @@
       </div>
       @endif
 
-      <form method="POST" action="{{ route('password.email') }}" aria-label="@lang('Reset Password')">
+      <form method="POST" action="{{ route('password.email') }}" aria-label="@lang('Сброс пароля')">
       @csrf
 
         <div class="input-group mb-3">
           <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-at"></i></span></div>
-          <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="@lang('E-Mail Address')" required>
+          <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="@lang('E-Mail Адрес')" required>
 
           @if ($errors->has('email'))
           <span class="invalid-feedback" role="alert">
@@ -38,7 +38,7 @@
         <div class="form-group row mb-0">
           <div class="col-md-6 offset-md-4">
             <button type="submit" class="btn btn-secondary">
-              @lang('Send Password Reset Link')
+              @lang('Отправить ссылку для сброса пароля')
             </button>
           </div>
         </div>

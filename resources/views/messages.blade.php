@@ -25,6 +25,6 @@
 @elseif (session('msgLinkAlreadyExists'))
   <div class="alert alert-success">
     {{ session('msgLinkAlreadyExists') }}
-    @auth<a href="{{route('duplicate', $url->keyword)}}">@lang('Duplicate this')<a>@endauth
+    @auth<a href="{{route('duplicate', $url->keyword)}}">@lang('Дублируйте это')<a>@endauth
   </div>
 @endif

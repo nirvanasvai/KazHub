@@ -4,8 +4,8 @@
       <div class="col">
         <div class="row mb-3">
           <div class="col">
-            <b>@lang('Platforms')</b>
-            <span class="badge badge-primary">@lang('Total:')
+            <b>@lang('Платформы')</b>
+            <span class="badge badge-primary">@lang('Всего:')
               {{ $url->visit->pluck('platform')->unique()->count() }}</span>
           </div>
         </div>
@@ -30,8 +30,8 @@
       <div class="col">
         <div class="row mb-3">
           <div class="col">
-            <b>@lang('Browsers')</b>
-            <span class="badge badge-primary">@lang('Total:')
+            <b>@lang('Браузеры')</b>
+            <span class="badge badge-primary">@lang('Всего:')
               {{ $url->visit->pluck('browser')->unique()->count() }}</span>
           </div>
         </div>
@@ -56,8 +56,8 @@
       <div class="col">
         <div class="row mb-3">
           <div class="col">
-            <b>@lang('Countries')</b>
-            <span class="badge badge-primary">@lang('Total:')
+            <b>@lang('Страны')</b>
+            <span class="badge badge-primary">@lang('Всего:')
               {{ $url->visit->pluck('country')->unique()->count() }}</span>
           </div>
         </div>

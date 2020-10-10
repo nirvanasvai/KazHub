@@ -31,16 +31,16 @@
           <img class="qrcode" src="data:{{$qrCode->getContentType()}};base64,{{$qrCode->generate()}}" alt="QR Code">
         </div>
         <div class="col-sm-9">
-          <b>@lang('Short URL')</b> <br>
+          <b>@lang('Котокий URL')</b> <br>
           <span class="short-url"><a href="{{ $url->short_url }}" target="_blank"
               id="copy">{{ urlDisplay($url->short_url, false) }}</a></span>
           <button class="btn btn-sm btn-outline-success btn-clipboard ml-3"
-            data-clipboard-text="{{ urlDisplay($url->short_url, false) }}" title="@lang('Copy to clipboard')"
-            data-toggle="tooltip">@lang('Copy')</button>
+            data-clipboard-text="{{ urlDisplay($url->short_url, false) }}" title="@lang('Скопировать в буфер обмена')"
+            data-toggle="tooltip">@lang('Копировать')</button>
 
           <br> <br>
 
-          <b>@lang('Original URL')</b>
+          <b>@lang('Оригинальный URL')</b>
           <div class="long-url">{{ $url->long_url }}</div>
 
           <div class="mt-5" id="jssocials"></div>

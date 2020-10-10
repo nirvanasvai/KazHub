@@ -34,7 +34,7 @@ $(document).ready(function() {
         ],
         language: {
             search: "_INPUT_",
-            searchPlaceholder: "Search..."
+            searchPlaceholder: "Поиск..."
         }
     }).order([4, 'desc']).draw();
 
@@ -61,7 +61,7 @@ $(document).ready(function() {
         ],
         language: {
             search: "_INPUT_",
-            searchPlaceholder: "Search..."
+            searchPlaceholder: "Поиск..."
         }
     }).order([3, 'desc']).draw();
 
@@ -95,7 +95,7 @@ $(document).ready(function() {
         ],
         language: {
             search: "_INPUT_",
-            searchPlaceholder: "Search..."
+            searchPlaceholder: "Поиск..."
         }
     }).order([2, 'desc']).draw();
 

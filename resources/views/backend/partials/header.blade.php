@@ -14,7 +14,7 @@
 
   <ul class="nav navbar-nav d-md-down-none">
     <li class="nav-item px-3">
-        <a class="nav-link" id="homepage-icon" href="{{ url('./') }}" title="{{appName()}} @lang('Home Page')" data-toggle="tooltip"><i class="fas fa-home"></i></a>
+        <a class="nav-link" id="homepage-icon" href="{{ url('./') }}" title="{{appName()}} @lang('Домашняя страница')" data-toggle="tooltip"><i class="fas fa-home"></i></a>
     </li>
 
     @foreach (Breadcrumbs::current() as $crumbs)
@@ -39,18 +39,18 @@
       </a>
       <div class="dropdown-menu dropdown-menu-right">
         <span class="dropdown-item" href="{{ route('dashboard') }}">
-          @lang('Signed in as') {{ Str::title(Auth::user()->name) }}
+          @lang('Вы вошли как') {{ Str::title(Auth::user()->name) }}
         </span>
         <a class="dropdown-item" href="{{ route('user.edit', Auth::user()->name) }}">
-          @lang('Your Profile')
+          @lang('Ваш Профиль')
         </a>
         <a class="dropdown-item" href="{{ route('user.change-password', Auth::user()->name) }}">
-          @lang('Change Password')
+          @lang('Сменить Пароль')
         </a>
         <a class="dropdown-item" href="{{ route('logout') }}"
            onclick="event.preventDefault();
            document.getElementById('logout-form').submit();">
-           @lang('Sign out')
+           @lang('Выйти')
         </a>
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
         @csrf

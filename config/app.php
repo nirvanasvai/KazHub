@@ -2,7 +2,7 @@
 
 return [
     'version'     => 'v1.0.0-alpha.6 (master)',
-    'name'        => env('APP_NAME', 'UrlHub'),
+    'name'        => env('APP_NAME', 'KazHub'),
     'description' => env('APP_DESCRIPTION', 'Simplify your links'),
 
     /*
